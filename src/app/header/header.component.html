@@ -1,0 +1,60 @@
+<mat-toolbar >
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    
+    <button (click)="menubtnClicked()"  mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    
+    <span>Shoppy</span>
+    <span class="example-spacer"></span>
+    
+    <div class="flex-container">
+        <ul>
+            <li>
+                <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                    <mat-icon>help</mat-icon>
+                  </button>
+
+            </li>
+            <li>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>message</mat-icon>
+                  </button>
+            </li>
+            <li>
+                 <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                     <mat-icon>person</mat-icon>
+                      </button>
+
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item><mat-icon>logout</mat-icon>Logout</button>
+                        
+                      </mat-menu>
+            </li>
+
+            <!-- <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <div class="profile_img">	
+                  <span class="prfil-img"><img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt=""> </span> 
+                  <div class="user-name">
+                    <p>Malorum</p>
+                   
+                  </div>
+                  <i class="fa fa-angle-down lnr"></i>
+                  <i class="fa fa-angle-up lnr"></i>
+                  <div class="clearfix"></div>	
+                </div>	
+              </a>
+
+            </li> -->
+        </ul>
+        
+    </div>
+
+
+
+   
+   
+  </mat-toolbar>

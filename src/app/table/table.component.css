@@ -1,0 +1,11 @@
+table {
+    width: 150%;
+   
+  }
+td{
+    background-color: rgb(51, 153, 138);
+}
+ th {
+    border: 1px solid;
+  }
+  h2{color: rgb(114, 110, 110);}
